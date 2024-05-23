@@ -11,6 +11,8 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 ### Installation
 
 ```
+$ git clone git@github.com:MicroEdgeCerts/documentation.git
+$ cd documentation
 $ npm install
 ```
 
