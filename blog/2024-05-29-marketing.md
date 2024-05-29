@@ -1,3 +1,10 @@
+---
+slug: marketing
+title: Marketing
+authors: [airinterface]
+tags: [MEC]
+---
+
 # Marketing prompt
 
 Revolutionizing learning experience.
