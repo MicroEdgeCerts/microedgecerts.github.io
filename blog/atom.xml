@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://microedgecerts.github.io/documentation/blog</id>
+    <title>Micro Edge Certs Blog</title>
+    <updated>2024-05-29T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://microedgecerts.github.io/documentation/blog"/>
+    <subtitle>Micro Edge Certs Blog</subtitle>
+    <icon>https://microedgecerts.github.io/documentation/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Marketing]]></title>
+        <id>https://microedgecerts.github.io/documentation/blog/marketing</id>
+        <link href="https://microedgecerts.github.io/documentation/blog/marketing"/>
+        <updated>2024-05-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Revolutionizing learning experience.]]></summary>
+        <content type="html"><![CDATA[<p>Revolutionizing learning experience.</p>
+<p>Motivate learning from within.</p>
+<p>BYOS: Bring your own skill</p>]]></content>
+        <author>
+            <name>福田ゆり</name>
+            <uri>https://github.com/airinterface</uri>
+        </author>
+        <category label="MEC" term="MEC"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[comparison]]></title>
+        <id>https://microedgecerts.github.io/documentation/blog/2024/05/28/comparison</id>
+        <link href="https://microedgecerts.github.io/documentation/blog/2024/05/28/comparison"/>
+        <updated>2024-05-28T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[基準（TBD)]]></title>
+        <id>https://microedgecerts.github.io/documentation/blog/2024/05/23/standard</id>
+        <link href="https://microedgecerts.github.io/documentation/blog/2024/05/23/standard"/>
+        <updated>2024-05-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Reference:]]></summary>
+        <content type="html"><![CDATA[<p>Reference:</p>
+<p><a href="https://github.com/decentralized-identity/did-jwt" target="_blank" rel="noopener noreferrer">OpenBadge</a> ヨーロッパ、日本、アメリカで使用されている。</p>
+<p><a href="https://github.com/1EdTech/cert-schema" target="_blank" rel="noopener noreferrer">Blockcerts</a> は、MIT Media Lab</p>
+<p><a href="https://github.com/1EdTech/cert-schema" target="_blank" rel="noopener noreferrer">https://github.com/1EdTech/cert-schema</a></p>
+<p>OpenBadge の拡張版。</p>
+<p><a href="https://digitalpromise.org/initiative/educator-micro-credentials/" target="_blank" rel="noopener noreferrer">https://digitalpromise.org/initiative/educator-micro-credentials/</a>
+Marketingを勉強する には良さそう。しかし、ここが違う所。</p>
+<p><img decoding="async" loading="lazy" src="https://github.com/MicroEdgeCerts/documentation/assets/2448586/021ba0b5-e9d6-4708-b414-726744beeee9" alt="waytoproove" class="img_ev3q"></p>
+<p><a href="https://microcredentials.digitalpromise.org/explore" target="_blank" rel="noopener noreferrer">https://microcredentials.digitalpromise.org/explore</a>　のマーケットがいい感じ。</p>
+<p><a href="https://github.com/1EdTech/cert-schema/blob/master/docs/open_badge_v2_extensions.md" target="_blank" rel="noopener noreferrer">https://github.com/1EdTech/cert-schema/blob/master/docs/open_badge_v2_extensions.md</a></p>
+<p>OpenBadge　のExtension/そのまま使う可能性を探る</p>
+<p><img decoding="async" loading="lazy" src="https://github.com/MicroEdgeCerts/documentation/assets/2448586/0bf463aa-08d8-4154-9539-3f4c01752db7" alt="didcore" class="img_ev3q"></p>
+<p>InterOperabilityにすると、MECではここを補うことが必要。</p>
+<p>あと　DID Methodは発行者独自と書いてあるから。ここも補うことが必要。</p>
+<p>Task1:
+そこにIssuerのメタデータを置くか・IssuerのCRU（Dはなし）をだれが許可するかがDAOの役目？</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="openbadge-v3-structure">OpenBadge V3 Structure<a href="https://microedgecerts.github.io/documentation/blog/2024/05/23/standard#openbadge-v3-structure" class="hash-link" aria-label="OpenBadge V3 Structure への直接リンク" title="OpenBadge V3 Structure への直接リンク">​</a></h2>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">+----------------------------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">|  AchievementCredential     |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+----------------------------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - @context                 |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - id                       |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - type                     |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - issuer                   |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - issuanceDate             |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - expirationDate           |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - credentialSubject        |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - proof                    |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+----------------------------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          v</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+----------------------------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">|         Issuer             |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+----------------------------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - id                       |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - type                     |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - name                     |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - image                    |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - url                      |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - address                  |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+----------------------------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          v</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+----------------------------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">|   CredentialSubject(User)  |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+----------------------------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - id                       |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - type                     |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - achievement              |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+----------------------------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          v</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+----------------------------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">|        Achievement         |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+----------------------------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - id                       |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - type                     |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - name                     |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - description              |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - criteria                 |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - image                    |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+----------------------------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          v</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+----------------------------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">|         Criteria           |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+----------------------------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - type                     |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - narrative                |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+----------------------------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          v</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+----------------------------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">|          Proof             |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+----------------------------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - type                     |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - created                  |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - verificationMethod       |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - proofPurpose             |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - jws                      |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+----------------------------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">MIT Badge</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+-------------------------------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">|       Open Badge V2           |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+-------------------------------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - id                          |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - type                        |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - name                        |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - description                 |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - criteria                    |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - issuer                      |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - recipient                   |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - image                       |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - evidence                    |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - verification                |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+-------------------------------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          v</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+-------------------------------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">|  MIT Blockcerts Extensions    |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+-------------------------------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - MerkleProofVerification2017 |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - Signature                   |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - RecipientProfile            |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">|    +-----------------------+  |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">|    | - publicKey           |  |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">|    +-----------------------+  |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| - SignatureLines              |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">|    +-----------------------+  |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">|    | - images               | |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">|    | - signers              | |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">|    +-----------------------+  |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+-------------------------------+</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="クリップボードにコードをコピー" title="コピー" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>オープンバッジ＝Issuerのプラットフォームがないと証明（バッジが正当であること）ができない</p>
+<p>MEC＝レジストリとしてブロックチェーンにいれるので、プラットフォームが無くても証明（正当であること）ができる、</p>
+<ol>
+<li>Registry の　構造。<!-- -->
+<ul>
+<li>複数の発行者でおなじようなクラスが照らし合わせられる。（タグ機能？）</li>
+<li>コースを複数もてる機能。</li>
+</ul>
+</li>
+</ol>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">・Verfiable Data Registry</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">・Issuer</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">・Verfier＝規格によって生成されたアプリ。</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">・Reviwer＝利用者は就活先の企業</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">・Holder＝Learner</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="クリップボードにコードをコピー" title="コピー" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>UseCase</p>
+<p>発行者側：
+１．発行者側が発行者情報、コース内容登録。
+２．発行者側がLearnerにMECを発行。</p>
+<p>Learner1:</p>
+<ol>
+<li>MECを取得</li>
+<li>MEC内容を参照できる</li>
+<li>（Out of Scope)MECBundleを任意でShareできる</li>
+</ol>
+<p>Learner2:</p>
+<ol>
+<li>Registryに行って、興味のあるコースを参照。</li>
+<li>Issuerの内容を見れる。</li>
+<li>（Out of Scope)何人にMECを発行できているか、Learner側からの評価もみれるといい。</li>
+</ol>
+<h1>データ構造</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="issure発行者">Issure(発行者）<a href="https://microedgecerts.github.io/documentation/blog/2024/05/23/standard#issure%E7%99%BA%E8%A1%8C%E8%80%85" class="hash-link" aria-label="Issure(発行者） への直接リンク" title="Issure(発行者） への直接リンク">​</a></h2>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">id: 0000-xxx00...</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">name: 千葉工大</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">法人番号： xxx-xxx-xxx</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">国：日本</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">アドレス：千葉県。。。</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">logo:</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="クリップボードにコードをコピー" title="コピー" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="クラス">クラス<a href="https://microedgecerts.github.io/documentation/blog/2024/05/23/standard#%E3%82%AF%E3%83%A9%E3%82%B9" class="hash-link" aria-label="クラス への直接リンク" title="クラス への直接リンク">​</a></h2>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">id:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">name:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">description:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">logo:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">expiration(optional):</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">tags:[web3,it]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">証明方法：パブリック鍵</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="クリップボードにコードをコピー" title="コピー" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="タグカテゴリー">タグ・カテゴリー<a href="https://microedgecerts.github.io/documentation/blog/2024/05/23/standard#%E3%82%BF%E3%82%B0%E3%82%AB%E3%83%86%E3%82%B4%E3%83%AA%E3%83%BC" class="hash-link" aria-label="タグ・カテゴリー への直接リンク" title="タグ・カテゴリー への直接リンク">​</a></h2>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">name:web3</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="クリップボードにコードをコピー" title="コピー" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="mec">MEC<a href="https://microedgecerts.github.io/documentation/blog/2024/05/23/standard#mec" class="hash-link" aria-label="MEC への直接リンク" title="MEC への直接リンク">​</a></h2>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">発行日：</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">名前：</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">logo:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">expiration:</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="クリップボードにコードをコピー" title="コピー" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>フォーマットは
+<a href="https://identity.foundation/jwt-vc-presentation-profile/#base64url-encoding-of-a-jwt-encoded-vc-included-in-a-vp" target="_blank" rel="noopener noreferrer">JWT</a> のデータVCが
+改ざんされていないかチェックできる。</p>
+<p>質問１：</p>
+<ul>
+<li>Web3概論のコースをRegistryに入れれるか。</li>
+<li>BlockCertの中で、SignatureLines.image ってなんなのか。</li>
+</ul>
+<p>Reference:</p>
+<p><a href="https://digitalcredentials.mit.edu/docs/white-paper-building-digital-credential-infrastructure-future.pdf" target="_blank" rel="noopener noreferrer">https://digitalcredentials.mit.edu/docs/white-paper-building-digital-credential-infrastructure-future.pdf</a></p>
+<p><a href="https://ocw.mit.edu/" target="_blank" rel="noopener noreferrer">MIT OpenCourseWare</a></p>
+<p><a href="https://www.p2pu.org/en/" target="_blank" rel="noopener noreferrer">Peer-2-Peer University</a></p>
+<p><a href="https://oercommons.org/" target="_blank" rel="noopener noreferrer">(P2PU) and OERCommons</a></p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Intro]]></title>
+        <id>https://microedgecerts.github.io/documentation/blog/intro</id>
+        <link href="https://microedgecerts.github.io/documentation/blog/intro"/>
+        <updated>2024-05-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Objective]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="objective">Objective<a href="https://microedgecerts.github.io/documentation/blog/intro#objective" class="hash-link" aria-label="Objective への直接リンク" title="Objective への直接リンク">​</a></h2>
+<p>MicroEdgeCertのVerifiable Credentialを基準化、生成する Moduleを提供し、そのModuleを使用するプロトタイプを作成。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="プロトタイプスコープ">プロトタイプスコープ<a href="https://microedgecerts.github.io/documentation/blog/intro#%E3%83%97%E3%83%AD%E3%83%88%E3%82%BF%E3%82%A4%E3%83%97%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%97" class="hash-link" aria-label="プロトタイプスコープ への直接リンク" title="プロトタイプスコープ への直接リンク">​</a></h2>
+<p>修了証をVCで生成する機能を作成。しかも、取り入れやすい形にしていく。個人の任意で証明を提供でき、国際的に通用できるものとする。</p>
+<h1>何に重点をおいていくか</h1>
+<p>個人のSkillを発信できる（可能性を見せる）もの。個人のモチベーションを高めるもの</p>
+<h1>何ができるようになるか</h1>
+<ul>
+<li>自分の達成してきたことにつながっているスキルプロバイダーを見ることができる。</li>
+<li>自分のクラス証明を任意で選び、相手に送ることができる。授業のクレジットの相互運用性を可能にし、留学、休学、他の学校からのクレジットをとれる可能性を示唆する。</li>
+<li>発行元がその専門で、認識されているのか認証できる。</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://github.com/MicroEdgeCerts/documentation/assets/2448586/70e8b70a-7615-48e1-9b88-b72d13082c4c" alt="brainstorm" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://github.com/MicroEdgeCerts/documentation/assets/2448586/04024e8c-c844-402c-8608-3cd5e47127df" alt="bitFlyer" class="img_ev3q"></p>
+<p>reference: <a href="https://blockchain.bitflyer.com/pdf/web3Research2023.pdf" target="_blank" rel="noopener noreferrer">https://blockchain.bitflyer.com/pdf/web3Research2023.pdf</a></p>
+<p><strong>教育機関、教育企業：</strong>
+学んだことを社会に活かす学生を生み出し、その手助けが貢献・利益に関わる。その学校で学んだ　 人材が、有名、社会に成果を残すと、それがまた<strong>広告材料</strong>となり新しい生徒が入ってくる。</p>
+<p>また、いろいろな学校には学校の伝統があり、それを<strong>伝えられる人材</strong>も価値となる。</p>
+<p><strong>研究機関は生徒を育成</strong>し、新しいアイデアを取り入れて、社会に貢献していく。</p>
+<p>政府に対しては、いろいろな研究機関がExpatとして意見を求められることがある。</p>
+<p>オンラインコースに関しては、その就学評価が役に立つ場面はCertificationなどで配られる場合もあり、授業・テストで利益を生むサービスを作る場合が多い。</p>
+<p>それぞれのUseCase内で評価はAuthorityのあるものから受け取るものとなり、評価基準は標準化されている。</p>
+<p><strong>企業：</strong></p>
+<p>企業としての学生との関わりは就職に取り込むこと、Internとしての人材確保など、その中でも審査基準はそれぞれだが、新人として入る場合、<strong>学歴を適合性を確保目的で判断材料</strong>として使われたり、また大学の研究室繋がりの採用などもありうる。また有名な大学は<strong>採用後のコネクション</strong>も期待される。分野によっては規格とCertificationがあり、<strong>コンプライアンスを達成</strong>するために、そのCertification保持者が採用されることもある。</p>
+<p><strong>政府・慈善事業：</strong></p>
+<p>企業と同等な意味で、卒業証書を糧に採用を判断することもあるが、その他でも、大学からの卒業率、社会貢献効果を統計としてみた上での、<strong>学生への経済支援の値や支援効果の評価</strong>として考えたり、<strong>国際化研究へのサポートを決定</strong>したり、<strong>アドバイザー</strong>としてプロジェクト参加を促したり、または、コミュニティーのつながりを意識した<strong>勉強会をサポートし、<strong>インセンティブ化し、そこで生まれた</strong>リレーションを政府、自治体とのコミュニケーションツール</strong>として育てていく</p>
+<p><strong>Learner・学生になる意味：</strong></p>
+<p>学生という概念はどの年齢層でも当てはまり、その動機はそれぞれある。社会への貢献に携わりたい、一人ではできない<strong>プロジェクトに関わり</strong>たい、分野の<strong>興味追求</strong>がある、やりたいことがわからないその中での<strong>自分発見の場</strong>に入りたい。その中で、<strong>いろいろな分野を体験</strong>できる。専門分野の新しい知識を取り入れたい。</p>
+<p>基準にそった<strong>Certificationを獲得し、それを利用してキャリア</strong>を積んでいく。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="skillとは">Skillとは<a href="https://microedgecerts.github.io/documentation/blog/intro#skill%E3%81%A8%E3%81%AF" class="hash-link" aria-label="Skillとは への直接リンク" title="Skillとは への直接リンク">​</a></h2>
+<p>( ブレインストーム )</p>
+<p><strong>Culture of Growth</strong> by Mary Murphy: &nbsp;Professor of&nbsp;<em><strong>Psychological</strong></em>&nbsp;and Brain Sciences at Indiana University　</p>
+<ul>
+<li>
+<p>天才は文化的 cultures of growth</p>
+</li>
+<li>
+<p>成長観念（Growth Mindset)</p>
+</li>
+<li>
+<p>固定観念 ( Fixed Mindset 　on cultural genius</p>
+<p>Study Group などに影響</p>
+<p>新しい興味に飛び付けない。</p>
+</li>
+</ul>
+<p>どのように自分発見に使用できるか（誰かに証明するだけではなく）</p>
+<p>How the credit is transfer to another.</p>
+<p>US:</p>
+<ul>
+<li>人が一つ一つコースを参照していく。</li>
+<li><a href="https://www.aacrao.org/" target="_blank" rel="noopener noreferrer">AACRAO</a></li>
+</ul>
+<h1>卒業証明ー＞Skill(TBD) 証明へ</h1>
+<p>前項でリストした内容のなかでのそれぞれの立場からの必要になる証明は卒業証明ではないことがわかる。</p>
+<p><strong>発行元</strong>：価値を提供できる機関から、Skill/機能が証明、期限を設定できる機能があればよいとする。</p>
+<p><strong>使用側</strong>：個人の任意で、日付範囲を指定し、パスコード(optional)で価値を審査側に閲覧できる。</p>
+<p><strong>審査側</strong>：価値を提供できる機関かどうかを判断でき、そのSkillを参照できればよいとする。<em>個人の確認方法はこの機能（仕様）外機能・システムとの連結を必要</em>とする。</p>
+<p>Tasks１：</p>
+<ul>
+<li>
+<p>基準作成 用スコープ</p>
+<p>TBD: Offlineでの発行先の証明をどうするか。BlockChainのTechnologyの使用の必要性、また使用した際のBlockChainを使用してない場合の連結をどうするか。</p>
+<ul>
+<li>基準：</li>
+</ul>
+<p>　　i18n ( 国際化)を含む</p>
+<p>最小Unitに入るデータはなんなのか、SkillごとにTag/カテゴリーをつけるか</p>
+<p>事業評価はいれるか入れないか。いれるとしたらどう標準化するか。</p>
+<p>Legacy Support:</p>
+<p>さらに卒業証明がまだ必要な場合はSkill証明のテンプレートバンドルとして必要リストをつくり、そのバンドルをすべてカバーできているかどうかを認証できるようにする。</p>
+</li>
+<li>
+<p>プロジェクトの名前・Githubの作成</p>
+<p>MicroEdgeCerts</p>
+</li>
+</ul>
+<h1>ロードマップ</h1>
+<p>ロードマップとプロジェクトは</p>
+<p><a href="https://github.com/MicroEdgeCerts" target="_blank" rel="noopener noreferrer">https://github.com/MicroEdgeCerts</a></p>
+<p>になります。</p>
+<p><img decoding="async" loading="lazy" src="https://github.com/MicroEdgeCerts/documentation/assets/2448586/c008acb1-dcb4-4a62-a4b4-a22bf6cb0c99" alt="roadmap" class="img_ev3q"></p>
+<p><a href="https://www.notion.so/TBD-779b078ef4904da7851cbb33d0f4d569?pvs=21" target="_blank" rel="noopener noreferrer">基準（TBD)</a></p>
+<p><a href="https://www.notion.so/Fund-Outreach-08e2d3653ccd4b77a639992edcda170d?pvs=21" target="_blank" rel="noopener noreferrer">Fund&amp;Outreach</a></p>
+<p><a href="https://www.notion.so/Document-5c523e622b664a78a34a74507dcc68ab?pvs=21" target="_blank" rel="noopener noreferrer">Document</a></p>
+<p><a href="https://www.notion.so/Architecture-2b07f0714e594d159d9532b0bd501aca?pvs=21" target="_blank" rel="noopener noreferrer">Architecture</a></p>]]></content>
+        <author>
+            <name>福田ゆり</name>
+            <uri>https://github.com/airinterface</uri>
+        </author>
+        <category label="MEC" term="MEC"/>
+    </entry>
+</feed>

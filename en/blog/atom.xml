@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://microedgecerts.github.io/documentation/en/blog</id>
+    <title>Micro Edge Certs Blog</title>
+    <updated>2024-05-29T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://microedgecerts.github.io/documentation/en/blog"/>
+    <subtitle>Micro Edge Certs Blog</subtitle>
+    <icon>https://microedgecerts.github.io/documentation/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Marketing]]></title>
+        <id>https://microedgecerts.github.io/documentation/en/blog/marketing</id>
+        <link href="https://microedgecerts.github.io/documentation/en/blog/marketing"/>
+        <updated>2024-05-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Revolutionizing learning experience.]]></summary>
+        <content type="html"><![CDATA[<p>Revolutionizing learning experience.</p>
+<p>Motivate learning from within.</p>
+<p>BYOS: Bring your own skill</p>]]></content>
+        <author>
+            <name>Yuri Fukuda</name>
+            <uri>https://github.com/airinterface</uri>
+        </author>
+        <category label="MEC" term="MEC"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[comparison]]></title>
+        <id>https://microedgecerts.github.io/documentation/en/blog/2024/05/28/comparison</id>
+        <link href="https://microedgecerts.github.io/documentation/en/blog/2024/05/28/comparison"/>
+        <updated>2024-05-28T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[基準（TBD)]]></title>
+        <id>https://microedgecerts.github.io/documentation/en/blog/2024/05/23/standard</id>
+        <link href="https://microedgecerts.github.io/documentation/en/blog/2024/05/23/standard"/>
+        <updated>2024-05-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Reference:]]></summary>
+        <content type="html"><![CDATA[<p>Reference:</p>
+<p><a href="https://github.com/decentralized-identity/did-jwt" target="_blank" rel="noopener noreferrer">OpenBadge</a> ヨーロッパ、日本、アメリカで使用されている。</p>
+<p><a href="https://github.com/1EdTech/cert-schema" target="_blank" rel="noopener noreferrer">Blockcerts</a> は、MIT Media Lab</p>
+<p><a href="https://github.com/1EdTech/cert-schema" target="_blank" rel="noopener noreferrer">https://github.com/1EdTech/cert-schema</a></p>
+<p>OpenBadge の拡張版。</p>
+<p><a href="https://digitalpromise.org/initiative/educator-micro-credentials/" target="_blank" rel="noopener noreferrer">https://digitalpromise.org/initiative/educator-micro-credentials/</a>
+Marketingを勉強する には良さそう。しかし、ここが違う所。</p>
+<p><img decoding="async" loading="lazy" src="https://github.com/MicroEdgeCerts/documentation/assets/2448586/021ba0b5-e9d6-4708-b414-726744beeee9" alt="waytoproove" class="img_ev3q"></p>
+<p><a href="https://microcredentials.digitalpromise.org/explore" target="_blank" rel="noopener noreferrer">https://microcredentials.digitalpromise.org/explore</a>　のマーケットがいい感じ。</p>
+<p><a href="https://github.com/1EdTech/cert-schema/blob/master/docs/open_badge_v2_extensions.md" target="_blank" rel="noopener noreferrer">https://github.com/1EdTech/cert-schema/blob/master/docs/open_badge_v2_extensions.md</a></p>
+<p>OpenBadge　のExtension/そのまま使う可能性を探る</p>
+<p><img decoding="async" loading="lazy" src="https://github.com/MicroEdgeCerts/documentation/assets/2448586/0bf463aa-08d8-4154-9539-3f4c01752db7" alt="didcore" class="img_ev3q"></p>
+<p>InterOperabilityにすると、MECではここを補うことが必要。</p>
+<p>あと　DID Methodは発行者独自と書いてあるから。ここも補うことが必要。</p>
+<p>Task1:
+そこにIssuerのメタデータを置くか・IssuerのCRU（Dはなし）をだれが許可するかがDAOの役目？</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="openbadge-v3-structure">OpenBadge V3 Structure<a href="https://microedgecerts.github.io/documentation/en/blog/2024/05/23/standard#openbadge-v3-structure" class="hash-link" aria-label="Direct link to OpenBadge V3 Structure" title="Direct link to OpenBadge V3 Structure">​</a></h2>
+<p>+----------------------------+
+|  AchievementCredential     |
++----------------------------+
+| - @context                 |
+| - id                       |
+| - type                     |
+| - issuer                   |
+| - issuanceDate             |
+| - expirationDate           |
+| - credentialSubject        |
+| - proof                    |
++----------------------------+
+|
+v
++----------------------------+
+|         Issuer             |
++----------------------------+
+| - id                       |
+| - type                     |
+| - name                     |
+| - image                    |
+| - url                      |
+| - address                  |
++----------------------------+
+|
+v
++----------------------------+
+|   CredentialSubject(User)  |
++----------------------------+
+| - id                       |
+| - type                     |
+| - achievement              |
++----------------------------+
+|
+v
++----------------------------+
+|        Achievement         |
++----------------------------+
+| - id                       |
+| - type                     |
+| - name                     |
+| - description              |
+| - criteria                 |
+| - image                    |
++----------------------------+
+|
+v
++----------------------------+
+|         Criteria           |
++----------------------------+
+| - type                     |
+| - narrative                |
++----------------------------+
+|
+v
++----------------------------+
+|          Proof             |
++----------------------------+
+| - type                     |
+| - created                  |
+| - verificationMethod       |
+| - proofPurpose             |
+| - jws                      |
++----------------------------+</p>
+<p>Reference:</p>
+<p><a href="https://digitalcredentials.mit.edu/docs/white-paper-building-digital-credential-infrastructure-future.pdf" target="_blank" rel="noopener noreferrer">https://digitalcredentials.mit.edu/docs/white-paper-building-digital-credential-infrastructure-future.pdf</a></p>
+<p><a href="https://ocw.mit.edu/" target="_blank" rel="noopener noreferrer">MIT OpenCourseWare</a></p>
+<p><a href="https://www.p2pu.org/en/" target="_blank" rel="noopener noreferrer">Peer-2-Peer University</a></p>
+<p><a href="https://oercommons.org/" target="_blank" rel="noopener noreferrer">(P2PU) and OERCommons</a></p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introduction]]></title>
+        <id>https://microedgecerts.github.io/documentation/en/blog/intro</id>
+        <link href="https://microedgecerts.github.io/documentation/en/blog/intro"/>
+        <updated>2024-05-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Objective]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="objective">Objective<a href="https://microedgecerts.github.io/documentation/en/blog/intro#objective" class="hash-link" aria-label="Direct link to Objective" title="Direct link to Objective">​</a></h2>
+<p>To standardize and generate verifiable credentials for MicroEdgeCert and create a prototype using this module.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="prototype-scope">Prototype Scope<a href="https://microedgecerts.github.io/documentation/en/blog/intro#prototype-scope" class="hash-link" aria-label="Direct link to Prototype Scope" title="Direct link to Prototype Scope">​</a></h2>
+<p>Develop a function to generate completion certificates as verifiable credentials, making them accessible and internationally recognized for personal use.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="focus-areas">Focus Areas<a href="https://microedgecerts.github.io/documentation/en/blog/intro#focus-areas" class="hash-link" aria-label="Direct link to Focus Areas" title="Direct link to Focus Areas">​</a></h2>
+<ul>
+<li>Showcasing individual skills and potential.</li>
+<li>Increasing personal motivation.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="capabilities">Capabilities<a href="https://microedgecerts.github.io/documentation/en/blog/intro#capabilities" class="hash-link" aria-label="Direct link to Capabilities" title="Direct link to Capabilities">​</a></h2>
+<ul>
+<li>Viewing skills linked to personal achievements.</li>
+<li>Selecting and sending class certificates at will, enabling interoperability of course credits for opportunities like studying abroad.</li>
+<li>Authenticating the issuer's expertise.</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://github.com/MicroEdgeCerts/documentation/assets/2448586/9fb40f4c-98eb-4a01-928a-1adff5e88afb" alt="Brainstorm" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://github.com/MicroEdgeCerts/documentation/assets/2448586/04024e8c-c844-402c-8608-3cd5e47127df" alt="bitFlyer" class="img_ev3q"></p>
+<p>Reference: <a href="https://blockchain.bitflyer.com/pdf/web3Research2023.pdf" target="_blank" rel="noopener noreferrer">bitFlyer Blockchain Research 2023</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="educational-institutions-and-companies">Educational Institutions and Companies<a href="https://microedgecerts.github.io/documentation/en/blog/intro#educational-institutions-and-companies" class="hash-link" aria-label="Direct link to Educational Institutions and Companies" title="Direct link to Educational Institutions and Companies">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="educational-institutions">Educational Institutions:<a href="https://microedgecerts.github.io/documentation/en/blog/intro#educational-institutions" class="hash-link" aria-label="Direct link to Educational Institutions:" title="Direct link to Educational Institutions:">​</a></h3>
+<p>Educational institutions aim to produce students who apply their knowledge in society, contributing to their reputation and attracting new students. Research institutions foster new ideas and contribute to society, often advising governments.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="companies">Companies:<a href="https://microedgecerts.github.io/documentation/en/blog/intro#companies" class="hash-link" aria-label="Direct link to Companies:" title="Direct link to Companies:">​</a></h3>
+<p>Companies assess students based on educational qualifications for employment, internships, and compliance with industry standards.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="governments-and-charities">Governments and Charities:<a href="https://microedgecerts.github.io/documentation/en/blog/intro#governments-and-charities" class="hash-link" aria-label="Direct link to Governments and Charities:" title="Direct link to Governments and Charities:">​</a></h3>
+<p>Governments use graduation statistics for economic support decisions, international research support, and community projects, fostering connections and communication with educational institutions.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="for-learners">For Learners:<a href="https://microedgecerts.github.io/documentation/en/blog/intro#for-learners" class="hash-link" aria-label="Direct link to For Learners:" title="Direct link to For Learners:">​</a></h3>
+<p>Students of all ages seek to contribute to society, engage in collaborative projects, and explore their interests. They aim to gain new knowledge and certifications to build their careers.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-a-skill">What is a Skill?<a href="https://microedgecerts.github.io/documentation/en/blog/intro#what-is-a-skill" class="hash-link" aria-label="Direct link to What is a Skill?" title="Direct link to What is a Skill?">​</a></h2>
+<ul>
+<li>The concept of growth (Growth Mindset).</li>
+<li>Fixed Mindset's impact on cultural genius and study groups.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="skill-certification">Skill Certification<a href="https://microedgecerts.github.io/documentation/en/blog/intro#skill-certification" class="hash-link" aria-label="Direct link to Skill Certification" title="Direct link to Skill Certification">​</a></h2>
+<p>A shift from graduation certificates to skill-based certifications is necessary, ensuring value from credible institutions and international applicability.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tasks">Tasks:<a href="https://microedgecerts.github.io/documentation/en/blog/intro#tasks" class="hash-link" aria-label="Direct link to Tasks:" title="Direct link to Tasks:">​</a></h3>
+<ul>
+<li>Develop standards, including internationalization.</li>
+<li>Determine data units and categorization for skills.</li>
+<li>Standardize project evaluation criteria.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="roadmap">Roadmap<a href="https://microedgecerts.github.io/documentation/en/blog/intro#roadmap" class="hash-link" aria-label="Direct link to Roadmap" title="Direct link to Roadmap">​</a></h2>
+<p>For the project's roadmap and more details, visit <a href="https://github.com/MicroEdgeCerts" target="_blank" rel="noopener noreferrer">MicroEdgeCerts on GitHub</a>.</p>
+<p><img decoding="async" loading="lazy" src="https://github.com/MicroEdgeCerts/documentation/assets/2448586/b9d65e54-edc6-490d-b82a-b23a3768abb2" alt="Roadmap" class="img_ev3q"></p>
+<p><a href="https://www.notion.so/TBD-779b078ef4904da7851cbb33d0f4d569?pvs=21" target="_blank" rel="noopener noreferrer">Standards (TBD)</a><br>
+<a href="https://www.notion.so/Fund-Outreach-08e2d3653ccd4b77a639992edcda170d?pvs=21" target="_blank" rel="noopener noreferrer">Fund &amp; Outreach</a><br>
+<a href="https://www.notion.so/Document-5c523e622b664a78a34a74507dcc68ab?pvs=21" target="_blank" rel="noopener noreferrer">Document</a><br>
+<a href="https://www.notion.so/Architecture-2b07f0714e594d159d9532b0bd501aca?pvs=21" target="_blank" rel="noopener noreferrer">Architecture</a></p>
+<hr>]]></content>
+        <author>
+            <name>Yuri Fukuda</name>
+            <uri>https://github.com/airinterface</uri>
+        </author>
+        <category label="MEC" term="MEC"/>
+    </entry>
+</feed>
