@@ -3,6 +3,6 @@ sidebar_position: 1
 ---
 
 
-# Version Alpha
+# Introduction
 
 lets start building alpha here. 
