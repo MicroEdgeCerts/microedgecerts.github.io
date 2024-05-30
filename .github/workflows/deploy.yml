@@ -7,7 +7,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+    permissions:
+      contents: read
+      issues: write
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -29,7 +32,7 @@ jobs:
       # below accordingly.
       if: github.ref == 'refs/heads/main'
       with:
-        github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build
         allow_empty_commit: true
 
