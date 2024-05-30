@@ -32,7 +32,7 @@ jobs:
       # below accordingly.
       if: github.ref == 'refs/heads/main'
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         publish_dir: ./build
         publish_branch: gh-pages
         allow_empty_commit: true
