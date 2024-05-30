@@ -3,6 +3,7 @@ sidebar_position: 1
 ---
 
 
-# Version Alpha
+# MEC規格について
 
-lets start building alpha here. 
+この規格は作業中ですが、Alphaのバージョンが現在の状態となります。
+ 
