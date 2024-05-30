@@ -3,7 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const organizationName = "MicroEdgeCerts";
-const projectName = "documentation";
+const projectName = "microedgecerts.github.io";
 
 const config: Config = {
   title: 'Micro Edge Certs',
