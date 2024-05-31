@@ -1,6 +1,11 @@
 airinterface:
-  name: 福田ゆり
+  name: airinterface
   title: Engineering mind creative being
   url: https://github.com/airinterface
   image_url: https://github.com/airinterface.png
 
+amefutd:
+  name: 宮本大 Dai Miyamoto
+  title: Engineer
+  url: https://github.com/amefutd
+  image_url: https://github.com/amefutd.png
