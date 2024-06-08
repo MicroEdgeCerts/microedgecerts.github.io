@@ -8,4 +8,4 @@
 | Ownership             | Student Owned On their device                      | Student Owned On the System | Student Owned On BitCoin / Ethereum       |
 | Interoperability      | OpenBadge compliance, integration with existing systems  | OpenBadge compliance           | OpenBadge compliance                                      |
 | User Interface        | Web and mobile-friendly, intuitive design          | Varies by implementation | Customizable                                 |
-| Validation            | Public keys on the BlockChain                    |link to retrieve public key on web2 | REST call   |
+| Validation            | パブリック鍵はBlockChain                    |linkか指定されたリンクでパブリック鍵 | REST call   |
