@@ -1,7 +1,31 @@
 {
-  "theme.ErrorPageContent.title": {
-    "message": "エラーが発生しました",
-    "description": "The title of the fallback page when the page crashed"
+  "home.subtitle": {
+    "message": "好きで選んだSkills - BYOS:Bring Your Own skill",
+    "description": "Hero Subtitle"
+  },
+  "home.subcategory1.title":{
+    "message": "自分のSkill証明は自分で持つ",
+    "description": "The home page category 1 title"
+  },
+  "home.subcategory1.description":{
+    "message": "アプリで、MEC証明を管理し、何度も申請する必要がありません。",
+    "description": "The home page category 1 description"
+  },
+  "home.subcategory2.title":{
+    "message": "好きを見つけて、Skillを見つける",
+    "description": "The home page category 2 title"
+  },
+  "home.subcategory2.description":{
+    "message": "好きなカテゴリーを選び、関連するSkillや発行者を閲覧できます。",
+    "description": "The home page category 2 description"
+  },
+  "home.subcategory3.title":{
+    "message": "ブロックチェーンに基づく検証",
+    "description": "The home page category 2 title"
+  },
+  "home.subcategory3.description":{
+    "message": "検証はブロックチェーンに基づき、発行側のサーバーへの依存を取り除きます。",
+    "description": "The home page category 2 description"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
     "message": "先頭へ戻る",

@@ -1,6 +1,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import {translate} from '@docusaurus/Translate';
 
 const organizationName = "MicroEdgeCerts";
 const projectName = "microedgecerts.github.io";
@@ -120,11 +121,11 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Works',
           items: [
             {
-              label: 'Get Started',
-              to: '/docs/intro',
+              label: 'TechnicalSummary',
+              to: '/blog',
             },
           ],
         },

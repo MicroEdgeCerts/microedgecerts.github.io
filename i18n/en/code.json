@@ -1,4 +1,32 @@
 {
+  "home.subtitle": {
+    "message": "Curiosity Driven Skills - BYOS:Bring Your Own skill",
+    "description": "Hero Subtitle"
+  },
+  "home.subcategory1.title":{
+    "message": "Store your own skill",
+    "description": "The home page category 1 title"
+  },
+  "home.subcategory1.description":{
+    "message": "Your app will hold your certification. No need to request it from your school once you store it.",
+    "description": "The home page category 1 description"
+  },
+  "home.subcategory2.title":{
+    "message": "Navigate your path with curiousity",
+    "description": "The home page category 2 title"
+  },
+  "home.subcategory2.description":{
+    "message": "Learners can search for skills available across issuers based on their curiosity.",
+    "description": "The home page category 3 description"
+  },
+  "home.subcategory3.title":{
+    "message": "Verify skills using blockchain",
+    "description": "The home page category 2 title"
+  },
+  "home.subcategory3.description":{
+    "message": "Skills are verified with data from the blockchain, removing the need to go to the educational institution's server to verify the skill.",
+    "description": "The home page category 3 description"
+  },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
     "description": "The title of the fallback page when the page crashed"

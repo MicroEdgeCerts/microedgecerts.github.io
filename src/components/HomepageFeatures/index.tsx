@@ -1,51 +1,106 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import {translate} from '@docusaurus/Translate';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  Image: React.ComponentType<React.ComponentProps<'svg'>> | string;
   description: JSX.Element;
 };
 
+const ImageComponent: React.FC<{ className:string, Image: React.ComponentType<React.ComponentProps<'svg'>>| string, title: string }> = 
+({ Image, title, className }) => {
+  const { i18n: { currentLocale } } = useDocusaurusContext();
+
+  if (typeof Image === 'string') {
+    return <img src={Image} 
+      className={className} alt={title} />;
+  }
+  const SVG = Image as React.ComponentType<React.ComponentProps<'svg'>>
+  return <Image className={className}  role="img"  />;
+};
+
+
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: translate(
+            {
+              message: 'SubCategory1Title',
+              // Optional
+              id: 'home.subcategory1.title',
+              description: 'The home page category 1 title',
+            },
+            {},
+          ),
+    Image: "/img/MECCertificateIcon.jpg",
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        {translate(
+            {
+              message: 'SubCategory1Description',
+              id: 'home.subcategory1.description',
+              description: 'The home page category 1 description',
+            },
+            {}
+            )}
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: translate(
+            {
+              message: 'SubCategory2Title',
+              // Optional
+              id: 'home.subcategory2.title',
+              description: 'The home page category 2 title',
+            },
+            {},
+          ),
+    Image: "/img/MEC_navigate.jpg",
     description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+      <>{translate(
+            {
+              message: 'SubCategory2Description',
+              id: 'home.subcategory2.description',
+              description: 'The home page category 1 description',
+            },
+            {}
+            )}
       </>
-    ),
+    )
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: translate(
+            {
+              message: 'SubCategory3Title',
+              // Optional
+              id: 'home.subcategory3.title',
+              description: 'The home page category 3 title',
+            },
+            {},
+          ),
+    Image: "/img/MEC_Verify.png",
     description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+      <>{translate(
+            {
+              message: 'SubCategory3Description',
+              id: 'home.subcategory3.description',
+              description: 'The home page category 1 description',
+            },
+            {}
+            )}
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, Image, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <ImageComponent className={styles.featureIcon}  Image={Image} title={title} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
