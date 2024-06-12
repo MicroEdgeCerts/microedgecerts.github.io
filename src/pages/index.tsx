@@ -15,7 +15,7 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">
+        <p className={`${styles.subtitle} hero__subtitle`}>
           <Translate id="home.subtitle" description="the hero subtitle">
             This header will be translated
           </Translate>
@@ -29,8 +29,8 @@ export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="Open Badge for Learners.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

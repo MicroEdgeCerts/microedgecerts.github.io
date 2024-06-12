@@ -12,6 +12,9 @@
   background-size: cover;
   background-position: center center;
 }
+.subtitle {
+  color: var(--ifm-heading-color);
+}
 
 @media screen and (max-width: 996px) {
   .heroBanner {
