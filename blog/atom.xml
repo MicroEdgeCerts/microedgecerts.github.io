@@ -19,9 +19,9 @@
 アプリとして開発中で、世界中で利用可能です。</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="主な利用者">主な利用者<a href="https://microedgecerts.github.io/blog/2024/06/07/summary#%E4%B8%BB%E3%81%AA%E5%88%A9%E7%94%A8%E8%80%85" class="hash-link" aria-label="主な利用者 への直接リンク" title="主な利用者 への直接リンク">​</a></h3>
 <ol>
-<li><strong>利用者 (Holder):</strong> バッジの申請、取得、保管、共有を行います。</li>
-<li><strong>発行者 (Issuer):</strong> バッジの発行、</li>
-<li><strong>認証者 (Verifier):</strong> バッジの認証を行います。</li>
+<li><strong>利用者 (Holder):</strong> 利用者登録後、発行者に対してバッジの申請、認証されたバッジの保管・共有ができます</li>
+<li><strong>発行者 (Issuer):</strong> 教育機関や団体が登録。バッジの登録と認定も行います</li>
+<li><strong>閲覧者 (Verifier):</strong> 利用者から共有されたバッジを閲覧・確認できます</li>
 </ol>
 <p><img decoding="async" loading="lazy" alt="MEC Usecase" src="https://microedgecerts.github.io/assets/images/MEC_Usecase-aa8b9a2fac451f332c60613ee9cb43cd.jpg" width="939" height="543" class="img_ev3q"></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="開発チーム">開発チーム<a href="https://microedgecerts.github.io/blog/2024/06/07/summary#%E9%96%8B%E7%99%BA%E3%83%81%E3%83%BC%E3%83%A0" class="hash-link" aria-label="開発チーム への直接リンク" title="開発チーム への直接リンク">​</a></h3>
@@ -31,9 +31,10 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="開発の流れ">開発の流れ<a href="https://microedgecerts.github.io/blog/2024/06/07/summary#%E9%96%8B%E7%99%BA%E3%81%AE%E6%B5%81%E3%82%8C" class="hash-link" aria-label="開発の流れ への直接リンク" title="開発の流れ への直接リンク">​</a></h3>
 <ol>
-<li><strong>発行者用登録サイトの作成:</strong> まず、発行者がバッジを発行するための登録サイトを作成します。</li>
-<li><strong>利用者閲覧アプリの作成:</strong> 次に、利用者が自分のバッジを確認・共有するための閲覧アプリを作成します。</li>
-<li><strong>閲覧者アプリの作成:</strong> 次に、利用者が自分のバッジをBlockChainを使い、認証できる閲覧アプリを作成します。</li>
+<li><strong>発行者用登録サイトの作成:</strong>
+まずは発行者の登録、バッジの登録ページを作成します。また利用者から申請のあったバッジの認証機能も実装します。</li>
+<li><strong>利用者閲覧アプリの作成:</strong>
+次に、利用者用アプリを作成。利用者が発行者にバッジを申請する機能、認証されたバッジのポートフォリオを閲覧・共有する機能を実装します。</li>
 </ol>
 <p><strong>MEC は、個人の学習成果を証明し、キャリアアップを支援するための強力なツールとなるでしょう。</strong></p>]]></content>
     </entry>
