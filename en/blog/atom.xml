@@ -19,9 +19,9 @@
 Currently in development as an app, it will be available worldwide.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="main-users">Main Users<a href="https://microedgecerts.github.io/en/blog/2024/06/07/summary#main-users" class="hash-link" aria-label="Direct link to Main Users" title="Direct link to Main Users">​</a></h3>
 <ol>
-<li><strong>Holders:</strong> Apply for, obtain, store, and share badges.</li>
-<li><strong>Issuers:</strong> Issue badges.</li>
-<li><strong>Verifiers:</strong> Verify badges.</li>
+<li><strong>Holder:</strong> After user registration, holders can apply for badges from issuers and store or share authenticated badges.</li>
+<li><strong>Issuer:</strong> Educational institutions or organizations can register. They can also register and certify badges.</li>
+<li><strong>Verifier:</strong> Verifiers can view and confirm badges shared by holders.</li>
 </ol>
 <p><img decoding="async" loading="lazy" alt="MEC Usecase" src="https://microedgecerts.github.io/en/assets/images/MecUsecaseEn-791a580756f3eda27eb9b3069870f977.png" width="1651" height="940" class="img_ev3q"></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="development-team">Development Team<a href="https://microedgecerts.github.io/en/blog/2024/06/07/summary#development-team" class="hash-link" aria-label="Direct link to Development Team" title="Direct link to Development Team">​</a></h3>
@@ -31,9 +31,10 @@ Currently in development as an app, it will be available worldwide.</p>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="development-process">Development Process<a href="https://microedgecerts.github.io/en/blog/2024/06/07/summary#development-process" class="hash-link" aria-label="Direct link to Development Process" title="Direct link to Development Process">​</a></h3>
 <ol>
-<li><strong>Creation of Registration Site for Issuers:</strong> First, create a registration site for issuers to issue badges.</li>
-<li><strong>Creation of Viewing App for Holders:</strong> Next, create a viewing app for holders to check and share their badges.</li>
-<li><strong>Creation of Verification App:</strong> Finally, create a verification app for holders to verify their badges using blockchain technology.</li>
+<li><strong>Creating a Registration Site for Issuers:</strong>
+First, create the registration page for issuers and the badge registration page. Additionally, implement the function for authenticating badges requested by users.</li>
+<li><strong>Creating a Viewing App for Users:</strong>
+Next, create an app for users. Implement the function for users to apply for badges from issuers and the function to view and share a portfolio of authenticated badges.</li>
 </ol>
 <p><strong>MEC will be a powerful tool to certify individual learning achievements and support career advancement.</strong></p>]]></content>
     </entry>
