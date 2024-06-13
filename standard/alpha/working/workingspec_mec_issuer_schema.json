@@ -42,6 +42,7 @@
         }
       ]
     },
+
     "ImageUri": {
       "description": "An image representative of the entity. In Blockcerts this is typically a data URI embedded as a base-64 encoded PNG image, but it may also be a URI where the image may be found.",
       "type": "string",
@@ -98,7 +99,7 @@
           "description": "Defined by `type` property of https://w3id.org/openbadges#Profile"
         },
         "name": {
-          "type": "string",
+          "$ref": "localized_string.json",
           "description": "Defined by `name` property of https://w3id.org/openbadges#Profile"
         },
         "url": {
@@ -111,7 +112,7 @@
           "description": "Defined by `telephone` property of https://w3id.org/openbadges#Profile"
         },
         "description": {
-          "type": "string",
+          "$ref": "localized_string.json",
           "description": "Defined by `description` property of https://w3id.org/openbadges#Profile"
         },
         "image": {
@@ -121,18 +122,6 @@
         "email": {
           "type": "string",
           "description": "Defined by `email` property of https://w3id.org/openbadges#Profile"
-        },
-        "revocationList": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "description": "Defined by `revocationList` property of https://w3id.org/openbadges#Profile. If embedded in a Blockcert and the issuer-hosted Profile, the value in the Blockcert should take preference."
         }
       },
       "required": [

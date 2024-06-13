@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LocalizedString",
+  "type": "object",
+  "properties": {
+    "defaultString": {
+      "type": "string",
+      "description": "The default string to be used if no localized string is available."
+    },
+    "localizedStrings": {
+      "type": "object",
+      "description": "A map of localized strings with locale identifiers as keys.",
+      "additionalProperties": {
+        "type": "string"
+      },
+      "propertyNames": {
+        "type": "string",
+        "description": "Locale identifier (e.g., en, fr, es).",
+        "pattern": "^[a-z]{2}(-[A-Z]{2})?$"
+      }
+    }
+  },
+  "required": ["defaultString"],
+  "additionalProperties": false
+}
