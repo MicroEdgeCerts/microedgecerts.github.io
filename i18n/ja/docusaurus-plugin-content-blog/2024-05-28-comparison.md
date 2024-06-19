@@ -1,11 +1,13 @@
+他サービスとの違い
 
-| Item                  | Micro Edge Certificate (Proposed)                  | Open Badges              | Blockcerts                                   |
+| 比較項目                  | Micro Edge Certificate                  | Open Badges              | Blockcerts                                   |
 |-----------------------|----------------------------------------------------|--------------------------|----------------------------------------------|
-| Blockchain Technology | Ethereum                                           | None                     | Bitcoin / Ethereum                                      |
-| Data Format           | JSON-LD                                            | JSON-LD                  | JSON-LD                                      |
-| Security              | Cryptographic signatures, PIN                      | Platform controlled       | Cryptographic signatures, Bitcoin blockchain |
-| Scalability           | Layer-2 solutions (Optimistic Rollups, zk-Rollups) | Central server-based     | Blockchain scalability issues                |
-| Ownership             | Student Owned On their device                      | Student Owned On the System | Student Owned On BitCoin / Ethereum       |
-| Interoperability      | OpenBadge compliance, integration with existing systems  | OpenBadge compliance           | OpenBadge compliance                                      |
-| User Interface        | Web and mobile-friendly, intuitive design          | Varies by implementation | Customizable                                 |
-| Validation            | Public keys on the BlockChain                    |link to retrieve public key on web2 | REST call   |
+| 開発元 | 当プロジェクトメンバー | Mozilla Foundation https://openbadges.org/ | MITメディアラボと企業パートナー https://www.blockcerts.org/ | 
+| ブロックチェーン技術 | イーサリアム                                           | なし                     | ビットコイン / イーサリアム                                      |
+| データフォーマット           | JSON-LD                                            | JSON-LD                  | JSON-LD                                      |
+| セキュリティー              | 暗号署名とPINで管理                    | プラットフォームで管理       | 暗号署名とビットコインブロックチェーンで管理 |
+| スケーラビリティ（需要が増加した場合の対応方法）           | Layer-2で処理を分散して対応 | サーバーのアップグレード等で対応     | ブロックチェーンのスケーラビリティ問題                |
+| 学習証明の所有             | 利用者がスマホで所有                      | 利用者がWebで所有 | 利用者がビットコインまたはイーサリアムで所有       |
+| 標準フォーマット      | Open Badgesに準拠  | Open Badgesに準拠           | Open Badgesに準拠                                      |
+| ユーザーインターフェイス        | Webとモバイル          | 実装方法により異なる | カスタマイズ可能                                 |
+| 学習証明の検証方法            | ブロックチェーンの公開鍵リンク                    |従来のweb2技術を利用   |  - 
