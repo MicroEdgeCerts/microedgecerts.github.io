@@ -7,23 +7,23 @@ tags: [MEC]
 
 # Marketing prompt
 
-Revolutionizing learning experience.
+・学びの体験を変える　（Revolutionizing learning experience.）
 
-Motivate learning from within. 
+・学ぶ意欲を高める　（Motivate learning from within.）
 
-BYOS: Bring your own skill 
+・自分のスキルを持ち歩く　（BYOS: Bring your own skill）
 
-1."Empowering Education with Blockchain: Secure, Verify, Succeed."
-"ブロックチェーンで教育を強化：安全、検証、成功。"
+1.ブロックチェーンで教育を変える：学びの成果を安全に確認できます。
+"Empowering Education with Blockchain: Secure, Verify, Succeed."
 
-2."Revolutionize Learning Records with Blockchain Precision."
-"ブロックチェーンの精度で学習記録を革命的に変える。"
+2.学習記録の革命：正確で信頼できる学習記録を提供します。
+"Revolutionize Learning Records with Blockchain Precision."
 
-3."Your Learning, Your Certificate: Securely Verified on Blockchain."
-"あなたの学び、あなたの証明書：ブロックチェーンで安全に検証。"
+3.あなたの学びを証明：ブロックチェーンで学習証明書を安全に管理します。
+"Your Learning, Your Certificate: Securely Verified on Blockchain."
 
-4."From Classroom to Career: Blockchain-Backed Credentials."
-"教室からキャリアへ：ブロックチェーンで裏付けられた資格。"
+4.キャリアに役立つ資格：学びからキャリアアップまでサポートします。
+"From Classroom to Career: Blockchain-Backed Credentials."
 
-5."Unlock Your Future with Blockchain-Verified Education Records."
-"ブロックチェーンで検証された教育記録で未来を開く。"
+5.未来を開く：信頼できる教育記録で将来の可能性を広げます。
+"Unlock Your Future with Blockchain-Verified Education Records."
