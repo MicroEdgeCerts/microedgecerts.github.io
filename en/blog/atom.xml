@@ -2,34 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://microedgecerts.github.io/en/blog</id>
     <title>Micro Edge Certs Blog</title>
-    <updated>2024-06-07T00:00:00.000Z</updated>
+    <updated>2024-06-18T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://microedgecerts.github.io/en/blog"/>
     <subtitle>Micro Edge Certs Blog</subtitle>
     <icon>https://microedgecerts.github.io/en/img/favicon.ico</icon>
     <entry>
+        <title type="html"><![CDATA[Contract]]></title>
+        <id>https://microedgecerts.github.io/en/blog/2024/06/18/technical</id>
+        <link href="https://microedgecerts.github.io/en/blog/2024/06/18/technical"/>
+        <updated>2024-06-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Contract has IssuerRegistry and AchievementCredentialRegistry, each connect to the metadata.]]></summary>
+        <content type="html"><![CDATA[<p>Contract has IssuerRegistry and AchievementCredentialRegistry, each connect to the metadata.</p>
+<p>Idea of the architecting seperation between the contract and IPFS Meta files is</p>
+<p>that</p>
+<p>if you need the information for validation -&gt; it will be in the contract
+Otherwise -&gt; it will be in IPFS</p>]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Technical Summary]]></title>
-        <id>https://microedgecerts.github.io/en/blog/2024/06/07/summary</id>
-        <link href="https://microedgecerts.github.io/en/blog/2024/06/07/summary"/>
+        <id>https://microedgecerts.github.io/en/blog/summary</id>
+        <link href="https://microedgecerts.github.io/en/blog/summary"/>
         <updated>2024-06-07T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[About Micro Edge Certs (MEC)]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="about-micro-edge-certs-mec">About Micro Edge Certs (MEC)<a href="https://microedgecerts.github.io/en/blog/2024/06/07/summary#about-micro-edge-certs-mec" class="hash-link" aria-label="Direct link to About Micro Edge Certs (MEC)" title="Direct link to About Micro Edge Certs (MEC)">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="about-micro-edge-certs-mec">About Micro Edge Certs (MEC)<a href="https://microedgecerts.github.io/en/blog/summary#about-micro-edge-certs-mec" class="hash-link" aria-label="Direct link to About Micro Edge Certs (MEC)" title="Direct link to About Micro Edge Certs (MEC)">​</a></h2>
 <p>Micro Edge Certs (MEC) is a learning history portfolio service utilizing blockchain technology.</p>
 <p>You can safely store and share your learning history, certifications, degrees, and other achievements as internationally recognized badges.
 Currently in development as an app, it will be available worldwide.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="main-users">Main Users<a href="https://microedgecerts.github.io/en/blog/2024/06/07/summary#main-users" class="hash-link" aria-label="Direct link to Main Users" title="Direct link to Main Users">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="main-users">Main Users<a href="https://microedgecerts.github.io/en/blog/summary#main-users" class="hash-link" aria-label="Direct link to Main Users" title="Direct link to Main Users">​</a></h3>
 <ol>
 <li><strong>Holder:</strong> After user registration, holders can apply for badges from issuers and store or share authenticated badges.</li>
 <li><strong>Issuer:</strong> Educational institutions or organizations can register. They can also register and certify badges.</li>
 <li><strong>Verifier:</strong> Verifiers can view and confirm badges shared by holders.</li>
 </ol>
 <p><img decoding="async" loading="lazy" alt="MEC Usecase" src="https://microedgecerts.github.io/en/assets/images/MecUsecaseEn-791a580756f3eda27eb9b3069870f977.png" width="1651" height="940" class="img_ev3q"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="development-team">Development Team<a href="https://microedgecerts.github.io/en/blog/2024/06/07/summary#development-team" class="hash-link" aria-label="Direct link to Development Team" title="Direct link to Development Team">​</a></h3>
+<p><a href="https://docs.google.com/presentation/d/1x-xKXRUcf47pTN17f75jSlao3UKc6-2jMlYYLihMUBg/edit?usp=sharing" target="_blank" rel="noopener noreferrer">MEC Presentation</a></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="development-team">Development Team<a href="https://microedgecerts.github.io/en/blog/summary#development-team" class="hash-link" aria-label="Direct link to Development Team" title="Direct link to Development Team">​</a></h3>
 <ul>
 <li><strong>Development Team:</strong> Responsible for developing the app.</li>
 <li><strong>Documentation Team:</strong> Responsible for creating documentation related to the app.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="development-process">Development Process<a href="https://microedgecerts.github.io/en/blog/2024/06/07/summary#development-process" class="hash-link" aria-label="Direct link to Development Process" title="Direct link to Development Process">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="development-process">Development Process<a href="https://microedgecerts.github.io/en/blog/summary#development-process" class="hash-link" aria-label="Direct link to Development Process" title="Direct link to Development Process">​</a></h3>
 <ol>
 <li><strong>Creating a Registration Site for Issuers:</strong>
 First, create the registration page for issuers and the badge registration page. Additionally, implement the function for authenticating badges requested by users.</li>
@@ -43,8 +56,12 @@ Next, create an app for users. Implement the function for users to apply for bad
         <id>https://microedgecerts.github.io/en/blog/marketing</id>
         <link href="https://microedgecerts.github.io/en/blog/marketing"/>
         <updated>2024-05-29T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Revolutionizing learning experience.]]></summary>
-        <content type="html"><![CDATA[<p>Revolutionizing learning experience.</p>
+        <summary type="html"><![CDATA[Marketing slide]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="marketing-slide">Marketing slide<a href="https://microedgecerts.github.io/en/blog/marketing#marketing-slide" class="hash-link" aria-label="Direct link to Marketing slide" title="Direct link to Marketing slide">​</a></h2>
+<p>Work In Progress</p>
+<p><a href="https://docs.google.com/presentation/d/1x-xKXRUcf47pTN17f75jSlao3UKc6-2jMlYYLihMUBg/edit?usp=sharing" target="_blank" rel="noopener noreferrer">MEC Presentation</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="marketing-prompt">Marketing prompt<a href="https://microedgecerts.github.io/en/blog/marketing#marketing-prompt" class="hash-link" aria-label="Direct link to Marketing prompt" title="Direct link to Marketing prompt">​</a></h2>
+<p>Revolutionizing learning experience.</p>
 <p>Motivate learning from within.</p>
 <p>BYOS: Bring your own skill</p>
 <p>1."Empowering Education with Blockchain: Secure, Verify, Succeed."</p>

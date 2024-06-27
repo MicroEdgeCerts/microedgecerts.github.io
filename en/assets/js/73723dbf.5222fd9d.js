@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmicroedgecerts_docs=self.webpackChunkmicroedgecerts_docs||[]).push([[9791],{6e3:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/en/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":6,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
