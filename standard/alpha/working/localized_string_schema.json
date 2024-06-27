@@ -3,11 +3,11 @@
   "title": "LocalizedString",
   "type": "object",
   "properties": {
-    "defaultString": {
+    "default": {
       "type": "string",
       "description": "The default string to be used if no localized string is available."
     },
-    "localizedStrings": {
+    "localized": {
       "type": "object",
       "description": "A map of localized strings with locale identifiers as keys.",
       "additionalProperties": {

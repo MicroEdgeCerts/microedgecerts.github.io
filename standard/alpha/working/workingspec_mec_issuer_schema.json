@@ -99,8 +99,12 @@
           "description": "Defined by `type` property of https://w3id.org/openbadges#Profile"
         },
         "name": {
-          "$ref": "localized_string.json",
+          "type": "string",
           "description": "Defined by `name` property of https://w3id.org/openbadges#Profile"
+        },
+        "name_extended": {
+          "$ref": "localized_string.json",
+          "description": "Localized name defined by ./localized_string_schema.json"
         },
         "url": {
           "type": "string",
@@ -112,8 +116,12 @@
           "description": "Defined by `telephone` property of https://w3id.org/openbadges#Profile"
         },
         "description": {
-          "$ref": "localized_string.json",
+          "$ref": "string",
           "description": "Defined by `description` property of https://w3id.org/openbadges#Profile"
+        },
+        "description_extended": {
+          "$ref": "localized_string.json",
+          "description": "Localized name defined by ./localized_string_schema.json"
         },
         "image": {
           "$ref": "#/definitions/ImageUri",

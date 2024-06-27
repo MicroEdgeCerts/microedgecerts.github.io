@@ -291,11 +291,20 @@
         "familyName": {
           "@id": "https://schema.org/familyName"
         },
+        "familyName_extended": {
+          "$ref": "localized_string.json",
+        },
         "familyNamePrefix": {
           "@id": "https://purl.imsglobal.org/spec/vc/ob/vocab.html#familyNamePrefix"
         },
+        "familyNamePrefix_extended": {
+          "$ref": "localized_string.json",
+        },
         "givenName": {
           "@id": "https://schema.org/givenName"
+        },
+        "givenName_extended": {
+          "$ref": "localized_string.json",
         },
         "honorificPrefix": {
           "@id": "https://schema.org/honorificPrefix"
