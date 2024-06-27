@@ -1,8 +1,12 @@
-
+---
+title: "Contract"
+isPinned: false
+---
 
 # Contract
 
 Contract has IssuerRegistry and AchievementCredentialRegistry, each connect to the metadata. 
+
 Idea of the architecting seperation between the contract and IPFS Meta files is 
 
 that 

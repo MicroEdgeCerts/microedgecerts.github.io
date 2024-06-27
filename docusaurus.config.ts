@@ -85,7 +85,7 @@ const config: Config = {
         src: 'img/card.jpg',
       },
       items: [
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/blog/summary', label: 'Blog', position: 'left'},
          
         {
           type: 'docSidebar',

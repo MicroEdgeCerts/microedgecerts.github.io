@@ -5,7 +5,14 @@ authors: [airinterface, amefutd]
 tags: [MEC]
 ---
 
-# Marketing prompt
+
+## Marketing slide
+
+Work In Progress
+
+[MEC Presentation](https://docs.google.com/presentation/d/1x-xKXRUcf47pTN17f75jSlao3UKc6-2jMlYYLihMUBg/edit?usp=sharing)
+
+## Marketing prompt
 
 Revolutionizing learning experience.
 
