@@ -146,7 +146,7 @@ Marketingを勉強する には良さそう。しかし、ここが違う所。<
 <a href="https://identity.foundation/jwt-vc-presentation-profile/#base64url-encoding-of-a-jwt-encoded-vc-included-in-a-vp" target="_blank" rel="noopener noreferrer">JWT</a> のデータVCが
 改ざんされていないかチェックできる。</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="mec-data-model">MEC Data Model<a href="https://microedgecerts.github.io/blog/2024/05/23/standard#mec-data-model" class="hash-link" aria-label="MEC Data Model への直接リンク" title="MEC Data Model への直接リンク">​</a></h3>
-<p><img decoding="async" loading="lazy" src="https://github.com/MicroEdgeCerts/documentation/assets/2448586/be8947e0-47e0-4098-9e29-037d8cfccbeb" alt="MECDataModel" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://github.com/airinterface/microedgecerts.github.io/assets/2448586/e8a4fd34-6431-4682-9030-bb6fda5506ad" alt="MECDataModel" class="img_ev3q"></p>
 <ol>
 <li>badge: BadgeClass には　signatureLines　画像、　BlockCertsにはありますが、はいらないと思います。（証明はVerification でするので）　　</li>
 <li>CredentialはBlockCertsにはBadgeの中にrecepientありますが、OpenBadgeには沿うためにRootLevelに戻します。ただ、Recepientという言葉はいいとおもったのでのこしたい。</li>
